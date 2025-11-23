@@ -1,0 +1,145 @@
+@import url('../css/index.css');
+
+/* Layout tweaks */
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 18px;
+}
+
+/* Sidebar spacing */
+.sidebar .section-card {
+  margin-bottom: 12px;
+}
+
+/* Chips (category buttons) */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.2s, box-shadow 0.25s, filter 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.chip:hover {
+  transform: translateY(-2px) scale(1.05);
+  filter: brightness(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.chip.active {
+  border-color: #fff;
+  filter: brightness(1.2);
+}
+
+/* Category-specific gradients */
+.chip.handicrafts { background: linear-gradient(135deg, #FF8C42, #FF3C38); }
+.chip.textiles { background: linear-gradient(135deg, #FFB347, #FFCC33); }
+.chip.bakery { background: linear-gradient(135deg, #8BC34A, #4CAF50); }
+.chip.music { background: linear-gradient(135deg, #4D96FF, #1E3C72); }
+.chip.all { background: linear-gradient(135deg, #AAA, #888); }
+
+/* Search input and button */
+.search {
+  display: flex;
+  gap: 6px;
+}
+
+.search input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.search button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Product cards (without images) */
+.products {
+  display: grid;
+  gap: 18px;
+}
+
+.product {
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.product h4 {
+  margin: 0 0 6px 0;
+}
+
+.product .meta {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.product .desc {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.product .price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.product .actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background-color: #3399ff;
+  color: #fff;
+  border: none;
+}
+
+.btn.ghost {
+  background-color: transparent;
+  border: 1px solid #3399ff;
+  color: #3399ff;
+}
+
+.icon-like {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

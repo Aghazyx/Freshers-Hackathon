@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Desi Districts — Home</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-left">
+      <a href="index.html" class="brand">🪔 Desi Districts</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="search.html">Search</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="cart.html" id="cartLink">Cart (<span id="navCartCount">0</span>)</a>
+      <a href="auth.html">Sign in</a>
+    </div>
+  </nav>
+
+  <header class="hero hero-home">
+    <div class="hero-bg"></div>
+    <div class="hero-dark"></div>
+
+    <div class="hero-content wrap">
+      <div class="hero-badge">India's First Location-Based Artisan Marketplace</div>
+      <h1>Connect With Local Artisans</h1>
+      <p>
+        Discover authentic handmade products from chakra weavers, khadi artisans,
+        and craftspeople in your area. Support local art, eliminate middlemen,
+        and preserve India's rich heritage.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="discover.html" class="btn primary">Discover Local Artisans</a>
+        <a href="auth.html" class="btn ghost">Join as Artisan</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- WHY DESI DISTRICT SECTION -->
+    <section class="why-section">
+      <h2 class="section-title">Why Desi District?</h2>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">📍</div>
+          <h3>Location-Based Discovery</h3>
+          <p>Find artisans near you using live geolocation. Support your local community.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">🛍️</div>
+          <h3>Direct Sales</h3>
+          <p>No middlemen. Artisans keep more profits, you get fair prices.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">❤️</div>
+          <h3>Preserve Heritage</h3>
+          <p>Keep traditional crafts like khadi and terracotta alive for future generations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="products-section">
+      <div class="section-head">
+        <h2>Featured Products</h2>
+        <div class="meta">Showing <span id="homeShownCount">0</span></div>
+      </div>
+
+      <div id="homeProducts" class="products grid-3"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer wrap">
+    © 2025 Desi Districts — by Team Code Crusaders
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

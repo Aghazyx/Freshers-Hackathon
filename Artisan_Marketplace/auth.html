@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign Up / Log In — Desi Districts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-bg">
+
+<div class="auth-wrap">
+  <div class="auth-card">
+    <aside class="auth-left">
+      <div class="left-inner">
+        <h1 class="brand">Desi Districts</h1>
+        <p class="tagline">Discover authentic Indian crafts & neighbourhood sellers.</p>
+      </div>
+    </aside>
+
+    <main class="auth-right">
+      <div class="auth-toggle">
+        <button id="signupBtn" class="btn primary active" type="button">Sign Up</button>
+        <button id="loginBtn" class="btn ghost" type="button">Log In</button>
+      </div>
+
+      <!-- Sign Up Form -->
+      <form id="signupForm" novalidate>
+        <input id="name" placeholder="Full name" required />
+        <input id="email" type="email" placeholder="Email" required />
+        <input id="phone" placeholder="Phone" required />
+        <input id="password" type="password" placeholder="Password" required />
+
+        <div class="role-row">
+          <label><input type="radio" name="role" value="Buyer" checked /> Buyer</label>
+          <label><input type="radio" name="role" value="Seller" /> Seller</label>
+        </div>
+
+        <!-- Seller Extra Fields -->
+        <div id="sellerExtras" style="display:none; margin-top:10px;">
+          <textarea id="bizDesc" placeholder="Business description"></textarea>
+          <input id="shopAddr" placeholder="Shop address" />
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Create Account</button>
+        </div>
+      </form>
+
+      <!-- Login Form -->
+      <form id="loginForm" class="hidden" novalidate>
+        <input id="loginName" placeholder="Name" required />
+        <input id="loginPassword" type="password" placeholder="Password" required />
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Log In</button>
+        </div>
+      </form>
+
+    </main>
+  </div>
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>

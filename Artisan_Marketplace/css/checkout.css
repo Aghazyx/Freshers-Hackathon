@@ -1,0 +1,10 @@
+@import url('index.css');
+
+.checkout-wrap{display:flex;flex-direction:column;gap:18px;padding:18px 0}
+.section-card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 24px var(--shadow)}
+.cart-summary div{margin:6px 0;display:flex;justify-content:space-between;align-items:center}
+.total{font-weight:800;margin-top:12px;text-align:right}
+.payment-form input{width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid #e5e5e5}
+.card-row{display:flex;gap:12px}
+.card-row input{flex:1}
+#payBtn{margin-top:12px}

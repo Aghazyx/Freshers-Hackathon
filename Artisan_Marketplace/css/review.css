@@ -1,0 +1,6 @@
+@import url('index.css');
+
+#productReview img { display:block; margin-top:12px; }
+#reviewsList .section-card { margin-bottom:12px; }
+textarea { width:100%; padding:10px; border-radius:8px; margin:8px 0; height:100px; }
+select { padding:6px 8px; border-radius:8px; margin-top:6px; }
